@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>drop down menu using ul li</title>
+	<style type="text/css">
+		
+		*{
+			padding: 0px;
+			margin: 0px;
+			list-style: none;
+		}
+
+		.main{
+			width: 1000px;
+			border: 2px solid red;
+			background-color: pink;
+			margin: auto;
+		}
+
+		.main>ul{
+			display: flex;
+		}
+
+		.main>ul>li{
+			padding: 10px;
+			border: 2px solid white;
+			position: relative;
+		}
+
+		.main>ul>li:hover{
+			background-color: blue;
+			color: red;
+		}
+
+		.submenu{
+			opacity: 0;
+			left: -100%;
+			visibility: hidden;
+			transition: 1s;
+			position: absolute;
+		}
+
+		.main>ul>li:hover .submenu{
+			opacity: 1;
+			left: 0px;
+			top: 100%;
+			visibility: visible;
+			background-color: yellow;
+		}
+
+		.submenu>li{
+			padding:10px;
+			border: 2px solid green;
+			position: relative;
+		}
+
+		.ssmenu{
+			position: absolute;
+			width: 130px;
+			background-color: orange;
+			left: 100%;
+			opacity: 0;
+			transition: 1s;
+			visibility: hidden;
+		}
+
+		.submenu>li:hover .ssmenu{
+			opacity: 1;
+			visibility: visible;
+			background-color: white;
+		}
+
+		.submenu>li{
+			color: blue;
+			padding: 10px;
+			border: 1px solid white;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<ul>
+			<li>home</li>
+			<li>about</li>
+			<li>courses
+				<ul class="submenu">
+					<li>PHP
+						<ul class="ssmenu">
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>java script</li>
+						</ul>
+					</li>
+					<li>JAVA</li>
+					<li>PYTHON</li>
+					<li>CPP</li>
+					<li>C</li>
+				</ul>
+			</li>
+			<li>gallery</li>
+			<li>contact</li>
+		</ul>
+	</div>
+</body>
+</html>

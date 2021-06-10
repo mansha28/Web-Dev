@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>drop down menu using div</title>
+	<style type="text/css">
+		.main{
+			width: 1000px;
+			background-color: red;
+			border: 2px solid black;
+		}
+
+		.clear{
+			clear: both;
+		}
+		.menu{
+			display: flex;
+			padding-left: 15px;
+
+		}
+		.menuitems{
+			padding: 15px 25px;
+			border: 2px solid white;
+			position: relative;
+		}
+
+		.submenu{
+			left: 0px;
+			position: absolute;
+			top: 100%;
+			margin: auto;
+			display: none;
+		}
+
+		.menuitems:hover{
+			background-color: yellow;
+		}
+
+		.menuitems:hover .submenu{
+			padding-left: 0px;
+			
+			display: block;
+		}
+
+		.submenuitems{
+			padding: 15px;
+			margin: 0px;
+
+			border: 1px solid red;
+			background-color: blue;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="menu">
+			<div class="menuitems">home</div>
+			<div class="menuitems">about</div>
+			<div class="menuitems">course
+				<div class="submenu">
+					<div class="submenuitems">PHP</div>
+					<div class="submenuitems">java</div>
+					<div class="submenuitems">python</div>
+					<div class="submenuitems">CPP</div>
+					<div class="submenuitems">C</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="menuitems">enquiry</div>
+			<div class="menuitems">gallery</div>
+			<div class="menuitems">contact us</div>
+		</div>
+	</div>
+</body>
+</html>

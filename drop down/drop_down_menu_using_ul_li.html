@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Drop down menu using ul li</title>
+	<style type="text/css">
+		*{
+			padding: 0px;
+			margin: 0px;
+			list-style: none;
+		}
+
+		.main{
+			width: 1000px;
+			border: 2px solid red;
+			background-color: pink;
+		}
+
+		.main>ul{
+			display: flex;
+		}
+		.main>ul>li{
+			
+			padding: 10px;
+			border: 1px solid blue;
+			position: relative;
+		}
+
+		.submenu{
+			
+			left: 0px;
+			top: 100%;
+			padding-top: 10px;
+			display: none;
+			position: absolute;
+		}
+
+		.submenu li{
+			padding: 10px;
+		}
+
+		.main ul li:hover{
+			background-color: yellow;
+		}
+
+		.main ul li:hover .submenu{
+			display: block;
+			background-color: green;
+			border: 1px solid black;
+			padding: 10px;
+		}
+
+		.main ul li:hover .submenu li{
+			padding: 10px;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<ul>
+			<li>home</li>
+			<li>about</li>
+			<li>courses
+				<ul class="submenu">
+					<li>PHP</li>
+					<li>java</li>
+					<li>python</li>
+					<li>cpp</li>
+					<li>c</li>
+				</ul>
+			</li>
+			<li>enquiry</li>
+			<li>gallery</li>
+			<li>contacts</li>
+		</ul>
+	</div>
+</body>
+</html>
