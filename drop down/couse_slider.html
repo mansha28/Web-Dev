@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>course slidder</title>
+	<link rel="stylesheet" type="text/css" href="../Bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../Bootstrap/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../Bootstrap/css/responsive.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<style type="text/css">
+		.course-title{
+			border: 1px solid grey;
+			background-color: lightblue;
+			text-align: center;
+
+		}
+
+		.course-content{
+			margin: auto;
+			text-align: center;
+			border: 1px solid black;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="container border" >
+			<div class="row mt-3">
+				<div class="col-md-12 course-title">PHP</div>
+				<div class="col-md-12 course-content" style="display: block;">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+			</div>
+
+			<div class="row mt-3">
+				<div class="col-md-12 course-title">JAVA</div>
+				<div class="col-md-12 course-content">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+			</div>
+
+			<div class="row mt-3">
+				<div class="col-md-12 course-title">Python</div>
+				<div class="col-md-12 course-content">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+			</div>
+
+			<div class="row mt-3">
+				<div class="col-md-12 course-title">CPP</div>
+				<div class="col-md-12 course-content">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</body>
+
+<script src="js/jquery-3.6.0.js"></script>
+<script type="text/javascript">
+	$('.course-title').click(
+		function(){
+			$('.course-content').slideUp(1000);
+			$(this).next('.course-content').slideToggle(1000);
+		}
+
+	);
+</script>
+</html>
