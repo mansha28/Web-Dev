@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Enquiry Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<body class="main">
+		<center><h2>Enquiry</h2></center>
+		<center>
+		<form>
+		<table border="1" width="650" cellspacing="0" cellpadding="10" class="main">
+
+			<div class="main">
+			
+			<tr>
+				<td>Gender</td>
+				<td><input type="radio" name="gender" value="male">Male <input type="radio" name="gender" value="Female">Female</td>
+			</tr>
+
+			<tr>
+				<td>Name</td>
+				<td><input type="text"></td>
+			</tr>
+
+			<tr>
+				<td>Mobile No.</td>
+				<td><input type="Number"></td>
+			</tr>
+			<tr>
+				<td>Email Id</td>
+				<td>
+					<input type="email" name="Email Adress">
+				</td>
+			</tr>
+			<tr>
+				<td>Blood Group</td>
+				<td>
+					<select>
+						<option>select option</option>
+						<option value="A+">A+</option>
+						<option value="A-">A-</option>
+						<option value="B+">B+</option>
+						<option value="B-">B-</option>
+						<option value="O+">O+</option>
+						<option value="O-">O-</option>
+						<option value="AB+">AB+</option>
+						<option value="AB-">AB-</option>
+					</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Address</td>
+				<td><textarea cols="50" rows="10"></textarea></td>
+			</tr>
+
+			<tr>
+				<td>Courses</td>
+				<td><input type="checkbox">PHP
+				<input type="checkbox">CPP
+				<input type="checkbox">C
+				<input type="checkbox">JAVA
+				<input type="checkbox">PYTHON</td>
+			</tr>
+
+			<tr>
+				<td>Date of submission</td>
+				<td><input type="date" name="date"></td>
+			</tr>
+
+			<tr>
+				<td><input type="submit" name="submit"></td>
+				<td><input type="reset" name="reset"></td>
+			</tr>
+
+
+			<img src="1.jpeg" height="400" width="650" >
+
+			</div>
+		</table>
+		</form>
+		</center>
+		<br>
+
+		<br>
+		photo
+		<input type="file" name="photo"/>
+
+		<hr>
+		<br>
+		
+		<input type="image"  name="pic" src="1.jpeg" height="900" alt="wallpaper" ><br>
+		image
+		
+
+	</body>
+</body>
+</html>
